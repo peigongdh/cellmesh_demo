@@ -1,9 +1,10 @@
 package backend
 
 import (
+	"github.com/davyxu/cellnet"
+
 	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellmesh_demo/svc/agent/model"
-	"github.com/davyxu/cellnet"
 )
 
 func init() {
@@ -33,16 +34,16 @@ func init() {
 
 	proto.Handle_Agent_Default = func(ev cellnet.Event) {
 
-		//switch msg := ev.Message().(type) {
-		//case *service.ServiceIdentifyACK:
+		// switch msg := ev.Message().(type) {
+		// case *service.ServiceIdentifyACK:
 		//	recoverBackend(ev.Session(), msg.SvcName)
-		//case *cellnet.SessionClosed:
+		// case *cellnet.SessionClosed:
 		//	removeBackend(ev.Session())
-		//}
+		// }
 	}
 
-	//// 从后端服务器收到的消息
-	//relay.SetBroadcaster(func(ev *relay.RecvMsgEvent) {
+	// // 从后端服务器收到的消息
+	// relay.SetBroadcaster(func(ev *relay.RecvMsgEvent) {
 	//
 	//	// 列表广播
 	//	if value := ev.PassThroughAsInt64Slice(); value != nil {
@@ -79,6 +80,6 @@ func init() {
 	//
 	//	}
 	//
-	//})
+	// })
 
 }

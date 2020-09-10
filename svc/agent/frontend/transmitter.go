@@ -2,12 +2,13 @@ package frontend
 
 import (
 	"encoding/binary"
+	"io"
+	"net"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/util"
 	"github.com/gorilla/websocket"
-	"io"
-	"net"
 )
 
 type socketOpt interface {

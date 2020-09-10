@@ -1,8 +1,9 @@
 package fxmodel
 
 import (
-	"github.com/davyxu/cellnet"
 	"sync"
+
+	"github.com/davyxu/cellnet"
 )
 
 var (

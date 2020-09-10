@@ -1,11 +1,13 @@
 package heartbeat
 
 import (
-	"github.com/davyxu/cellmesh_demo/svc/agent/model"
+	"time"
+
 	"github.com/davyxu/cellmesh/discovery"
 	"github.com/davyxu/cellmesh/discovery/kvconfig"
 	"github.com/davyxu/cellnet/timer"
-	"time"
+
+	"github.com/davyxu/cellmesh_demo/svc/agent/model"
 )
 
 func StartCheck() {

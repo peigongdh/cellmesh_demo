@@ -2,15 +2,17 @@ package frontend
 
 import (
 	"fmt"
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/agent/model"
+	"time"
+
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	_ "github.com/davyxu/cellnet/peer/tcp"
 	"github.com/davyxu/cellnet/proc"
 	"github.com/davyxu/cellnet/proc/gorillaws"
 	"github.com/davyxu/cellnet/proc/tcp"
-	"time"
+
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/agent/model"
 )
 
 var (

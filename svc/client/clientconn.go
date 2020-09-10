@@ -2,6 +2,10 @@ package main
 
 import (
 	"errors"
+	"reflect"
+	"sync"
+	"time"
+
 	"github.com/davyxu/cellmesh/discovery"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
@@ -9,9 +13,6 @@ import (
 	"github.com/davyxu/cellnet/proc"
 	"github.com/davyxu/cellnet/proc/gorillaws"
 	"github.com/davyxu/cellnet/proc/tcp"
-	"reflect"
-	"sync"
-	"time"
 )
 
 func selectStrategy(descList []*discovery.ServiceDesc) *discovery.ServiceDesc {

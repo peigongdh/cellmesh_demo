@@ -2,10 +2,12 @@ package verify
 
 import (
 	"fmt"
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/agent/api"
+
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
+
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/agent/api"
 )
 
 func init() {

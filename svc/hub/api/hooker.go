@@ -2,11 +2,12 @@ package hubapi
 
 import (
 	"github.com/davyxu/cellmesh/service"
-	"github.com/davyxu/cellmesh_demo/basefx/model"
-	"github.com/davyxu/cellmesh_demo/svc/hub/model"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/proc"
 	"github.com/davyxu/cellnet/proc/tcp"
+
+	"github.com/davyxu/cellmesh_demo/basefx/model"
+	"github.com/davyxu/cellmesh_demo/svc/hub/model"
 )
 
 type subscriberHooker struct {

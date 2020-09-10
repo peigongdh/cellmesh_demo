@@ -2,10 +2,12 @@ package model
 
 import (
 	"errors"
-	"github.com/davyxu/cellmesh_demo/proto"
+	"time"
+
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
-	"time"
+
+	"github.com/davyxu/cellmesh_demo/proto"
 )
 
 type Backend struct {

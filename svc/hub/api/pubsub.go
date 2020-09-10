@@ -1,11 +1,12 @@
 package hubapi
 
 import (
+	"github.com/davyxu/cellnet/relay"
+
 	"github.com/davyxu/cellmesh_demo/basefx"
 	"github.com/davyxu/cellmesh_demo/basefx/model"
 	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellmesh_demo/svc/hub/model"
-	"github.com/davyxu/cellnet/relay"
 )
 
 // 传入你的服务名, 连接到hub

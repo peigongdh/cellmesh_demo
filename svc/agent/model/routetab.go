@@ -1,8 +1,9 @@
 package model
 
 import (
-	"github.com/davyxu/cellmesh_demo/table"
 	"sync"
+
+	"github.com/davyxu/cellmesh_demo/table"
 )
 
 const (

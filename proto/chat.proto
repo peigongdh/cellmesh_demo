@@ -1,4 +1,3 @@
-
 [AutoMsgID Codec:"gogopb" Service: "game" RouteRule: "auth"]
 struct ChatREQ {
 	Content string

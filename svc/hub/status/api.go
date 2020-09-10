@@ -1,10 +1,12 @@
 package hubstatus
 
 import (
-	"github.com/davyxu/cellmesh_demo/svc/hub/model"
-	"github.com/davyxu/cellmesh/service"
 	"math/rand"
 	"sort"
+
+	"github.com/davyxu/cellmesh/service"
+
+	"github.com/davyxu/cellmesh_demo/svc/hub/model"
 )
 
 func SelectServiceByLowUserCount(svcName, svcGroup string, mustConnected bool) (finalSvcID string) {

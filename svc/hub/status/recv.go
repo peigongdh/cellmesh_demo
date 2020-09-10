@@ -1,13 +1,15 @@
 package hubstatus
 
 import (
+	"time"
+
+	"github.com/davyxu/cellnet"
+	"github.com/davyxu/cellnet/timer"
+
 	"github.com/davyxu/cellmesh_demo/basefx/model"
 	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellmesh_demo/svc/hub/api"
 	"github.com/davyxu/cellmesh_demo/svc/hub/model"
-	"github.com/davyxu/cellnet"
-	"github.com/davyxu/cellnet/timer"
-	"time"
 )
 
 var (
@@ -50,7 +52,7 @@ func StartRecvStatus(channelNames []string, svcStatusHandler *func(ev cellnet.Ev
 			})
 
 			for _, svcid := range timeoutSvcID {
-				//log.Debugln("remove svc status: ", svcid)
+				// log.Debugln("remove svc status: ", svcid)
 				model.RemoveStatus(svcid)
 			}
 

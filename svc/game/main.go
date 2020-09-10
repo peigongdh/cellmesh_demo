@@ -1,14 +1,16 @@
 package main
 
 import (
+	"time"
+
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellmesh_demo/basefx"
 	"github.com/davyxu/cellmesh_demo/basefx/model"
 	_ "github.com/davyxu/cellmesh_demo/svc/game/chat"
 	_ "github.com/davyxu/cellmesh_demo/svc/game/verify"
 	"github.com/davyxu/cellmesh_demo/svc/hub/api"
 	"github.com/davyxu/cellmesh_demo/svc/hub/status"
-	"github.com/davyxu/golog"
-	"time"
 )
 
 var log = golog.New("main")

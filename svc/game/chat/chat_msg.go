@@ -2,9 +2,11 @@ package chat
 
 import (
 	"fmt"
+
+	"github.com/davyxu/cellnet"
+
 	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellmesh_demo/svc/agent/api"
-	"github.com/davyxu/cellnet"
 )
 
 func init() {

@@ -1,14 +1,16 @@
 package basefx
 
 import (
+	"time"
+
 	"github.com/davyxu/cellmesh/discovery"
 	"github.com/davyxu/cellmesh/service"
-	"github.com/davyxu/cellmesh_demo/basefx/model"
-	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/peer"
 	"github.com/davyxu/cellnet/proc"
-	"time"
+
+	"github.com/davyxu/cellmesh_demo/basefx/model"
+	"github.com/davyxu/cellmesh_demo/proto"
 )
 
 func CreateCommnicateAcceptor(param fxmodel.ServiceParameter) cellnet.Peer {
@@ -26,7 +28,7 @@ func CreateCommnicateAcceptor(param fxmodel.ServiceParameter) cellnet.Peer {
 
 	msgFunc := proto.GetMessageHandler(param.SvcName)
 
-	//"tcp.svc"
+	// "tcp.svc"
 	proc.BindProcessorHandler(p, param.NetProcName, func(ev cellnet.Event) {
 
 		if msgFunc != nil {

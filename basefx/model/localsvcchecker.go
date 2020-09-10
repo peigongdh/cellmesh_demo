@@ -2,11 +2,12 @@ package fxmodel
 
 import (
 	"fmt"
+	"strings"
+	"time"
+
 	"github.com/davyxu/cellmesh/discovery"
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
-	"strings"
-	"time"
 )
 
 func getPeerStatus(svc cellnet.Peer) string {

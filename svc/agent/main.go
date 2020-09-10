@@ -1,7 +1,12 @@
 package main
 
 import (
+	"time"
+
 	"github.com/davyxu/cellmesh/service"
+	_ "github.com/davyxu/cellnet/peer/gorillaws"
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellmesh_demo/basefx"
 	"github.com/davyxu/cellmesh_demo/basefx/model"
 	_ "github.com/davyxu/cellmesh_demo/proto" // 进入协议
@@ -12,9 +17,6 @@ import (
 	"github.com/davyxu/cellmesh_demo/svc/agent/routerule"
 	"github.com/davyxu/cellmesh_demo/svc/hub/api"
 	"github.com/davyxu/cellmesh_demo/svc/hub/status"
-	_ "github.com/davyxu/cellnet/peer/gorillaws"
-	"github.com/davyxu/golog"
-	"time"
 )
 
 var log = golog.New("main")

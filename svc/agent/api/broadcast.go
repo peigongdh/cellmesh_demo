@@ -1,10 +1,11 @@
 package agentapi
 
 import (
-	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
+
+	"github.com/davyxu/cellmesh_demo/proto"
 )
 
 // 关闭所有网关上客户端的连接

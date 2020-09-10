@@ -1,10 +1,11 @@
 package main
 
 import (
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellmesh_demo/basefx"
 	"github.com/davyxu/cellmesh_demo/basefx/model"
 	_ "github.com/davyxu/cellmesh_demo/svc/hub/subscribe"
-	"github.com/davyxu/golog"
 )
 
 var log = golog.New("main")

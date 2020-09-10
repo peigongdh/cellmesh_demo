@@ -1,10 +1,11 @@
 package basefx
 
 import (
-	"github.com/davyxu/cellmesh_demo/basefx/model"
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/msglog"
+
+	"github.com/davyxu/cellmesh_demo/basefx/model"
 )
 
 // 初始化框架

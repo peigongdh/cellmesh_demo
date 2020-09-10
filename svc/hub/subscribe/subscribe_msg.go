@@ -1,10 +1,11 @@
 package subscribe
 
 import (
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/hub/model"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/relay"
+
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/hub/model"
 )
 
 func init() {

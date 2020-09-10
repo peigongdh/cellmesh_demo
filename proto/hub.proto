@@ -1,4 +1,3 @@
-
 [AutoMsgID Codec:"protoplus" Service: "hub"]
 struct SubscribeChannelREQ {
 	Channel string

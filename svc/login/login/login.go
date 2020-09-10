@@ -1,18 +1,19 @@
 package login
 
 import (
-	"github.com/davyxu/cellmesh_demo/basefx"
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/hub/status"
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/util"
+
+	"github.com/davyxu/cellmesh_demo/basefx"
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/hub/status"
 )
 
 func init() {
 	proto.Handle_Login_LoginREQ = func(ev cellnet.Event) {
 
-		//msg := ev.Message().(*proto.LoginREQ)
+		// msg := ev.Message().(*proto.LoginREQ)
 		// TODO 第三方请求验证及信息拉取
 
 		var ack proto.LoginACK
@@ -26,7 +27,6 @@ func init() {
 		}
 
 		agentWAN := basefx.GetRemoteServiceWANAddress("agent", agentSvcID)
-
 
 		host, port, err := util.SpliteAddress(agentWAN)
 		if err != nil {

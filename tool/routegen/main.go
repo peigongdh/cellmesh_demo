@@ -4,13 +4,14 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"github.com/davyxu/cellmesh_demo/table"
+	"os"
+
 	"github.com/davyxu/cellmesh/discovery"
-	"github.com/davyxu/cellmesh/discovery/memsd/api"
 	"github.com/davyxu/protoplus/model"
 	"github.com/davyxu/protoplus/msgidutil"
 	"github.com/davyxu/protoplus/util"
-	"os"
+
+	"github.com/davyxu/cellmesh_demo/table"
 )
 
 // 从Proto文件中获取路由信息

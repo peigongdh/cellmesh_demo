@@ -1,9 +1,10 @@
 package backend
 
 import (
-	"github.com/davyxu/cellmesh_demo/proto"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
+
+	"github.com/davyxu/cellmesh_demo/proto"
 )
 
 type RecvMsgEvent struct {

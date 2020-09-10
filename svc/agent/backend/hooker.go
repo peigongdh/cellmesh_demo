@@ -2,13 +2,14 @@ package backend
 
 import (
 	"github.com/davyxu/cellmesh/service"
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/agent/model"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/codec"
 	"github.com/davyxu/cellnet/msglog"
 	"github.com/davyxu/cellnet/proc"
 	"github.com/davyxu/cellnet/proc/tcp"
+
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/agent/model"
 )
 
 type BackendMsgHooker struct {
@@ -166,7 +167,7 @@ func init() {
 		bundle.SetHooker(proc.NewMultiHooker(
 			new(service.SvcEventHooker), // 服务互联处理
 			new(BackendMsgHooker),       // 网关消息处理
-			new(tcp.MsgHooker)))         // tcp基础消息处理
+			new(tcp.MsgHooker))) // tcp基础消息处理
 		bundle.SetCallback(proc.NewQueuedEventCallback(userCallback))
 	})
 
@@ -177,7 +178,7 @@ func init() {
 		bundle.SetHooker(proc.NewMultiHooker(
 			new(service.SvcEventHooker), // 服务互联处理
 			new(broadcasterHooker),      // 网关消息处理
-			new(tcp.MsgHooker)))         // tcp基础消息处理
+			new(tcp.MsgHooker))) // tcp基础消息处理
 		bundle.SetCallback(proc.NewQueuedEventCallback(userCallback))
 	})
 }

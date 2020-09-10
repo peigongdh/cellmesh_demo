@@ -4,16 +4,18 @@ import (
 	"bufio"
 	"flag"
 	"fmt"
-	"github.com/davyxu/cellmesh_demo/proto"
+	"os"
+	"strings"
+	"time"
+
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
 	"github.com/davyxu/cellnet/msglog"
 	_ "github.com/davyxu/cellnet/peer/gorillaws"
 	"github.com/davyxu/cellnet/timer"
 	"github.com/davyxu/golog"
-	"os"
-	"strings"
-	"time"
+
+	"github.com/davyxu/cellmesh_demo/proto"
 )
 
 var log = golog.New("main")

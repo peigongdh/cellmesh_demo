@@ -1,9 +1,10 @@
 package routerule
 
 import (
+	"github.com/davyxu/cellmesh/discovery"
+
 	"github.com/davyxu/cellmesh_demo/svc/agent/model"
 	"github.com/davyxu/cellmesh_demo/table"
-	"github.com/davyxu/cellmesh/discovery"
 )
 
 // 用Consul KV下载路由规则

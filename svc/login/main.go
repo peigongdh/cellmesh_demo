@@ -1,17 +1,18 @@
 package main
 
 import (
+	"github.com/davyxu/cellnet"
+	_ "github.com/davyxu/cellnet/peer/gorillaws"
+	"github.com/davyxu/cellnet/proc"
+	"github.com/davyxu/cellnet/proc/gorillaws"
+	"github.com/davyxu/golog"
+
 	"github.com/davyxu/cellmesh_demo/basefx"
 	fxmodel "github.com/davyxu/cellmesh_demo/basefx/model"
 	"github.com/davyxu/cellmesh_demo/proto"
 	hubapi "github.com/davyxu/cellmesh_demo/svc/hub/api"
 	hubstatus "github.com/davyxu/cellmesh_demo/svc/hub/status"
 	_ "github.com/davyxu/cellmesh_demo/svc/login/login"
-	"github.com/davyxu/cellnet"
-	_ "github.com/davyxu/cellnet/peer/gorillaws"
-	"github.com/davyxu/cellnet/proc"
-	"github.com/davyxu/cellnet/proc/gorillaws"
-	"github.com/davyxu/golog"
 )
 
 var log = golog.New("main")

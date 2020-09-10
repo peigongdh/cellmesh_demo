@@ -1,10 +1,11 @@
 package agentapi
 
 import (
-	"github.com/davyxu/cellmesh_demo/proto"
-	"github.com/davyxu/cellmesh_demo/svc/agent/backend"
 	"github.com/davyxu/cellmesh/service"
 	"github.com/davyxu/cellnet"
+
+	"github.com/davyxu/cellmesh_demo/proto"
+	"github.com/davyxu/cellmesh_demo/svc/agent/backend"
 )
 
 // 传入用户处理网关消息回调,返回消息源回调
